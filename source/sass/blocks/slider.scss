@@ -1,0 +1,36 @@
+.slider {
+  position: relative;
+  .slider-carousel {
+    @include list-reset;
+  }
+
+  .hero {
+    display: flex;
+    padding: 52px 26.3% 66px;
+    align-items: center;
+    background-color: $purple-600;
+    gap: 32px;
+
+    .hero-title {
+      margin: 0;
+      font-size: 45px;
+      line-height: 1;
+    }
+  }
+  .slider-button {
+    @include button-reset;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+
+    &.previous {
+      left: 50px;
+      .arrow-icon {
+        transform: rotate(180deg);
+      }
+    }
+    &.next {
+      right: 50px;
+    }
+  }
+}

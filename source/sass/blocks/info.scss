@@ -1,0 +1,33 @@
+.info {
+  padding-top: 40px;
+
+  &.addition-info {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+  }
+
+  .info-title {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0 0 40px;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  .info-description {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+  }
+}

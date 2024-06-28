@@ -1,0 +1,22 @@
+.block-two {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 30px;
+  padding: 25px;
+  gap: 20px;
+  background-color: $green-200;
+}
+
+.block-two-item {
+  background-color: $green-600;
+  border: 2px solid $green-300;
+  width: 198px;
+  height: 198px;
+  border-radius: 35px;
+
+  &:hover {
+    box-shadow: 2px 5px 10px $green-600;
+  }
+}

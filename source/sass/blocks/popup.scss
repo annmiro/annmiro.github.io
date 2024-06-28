@@ -1,0 +1,48 @@
+.popup {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+
+  &.show {
+    display: flex;
+    z-index: 100;
+  }
+
+  .popup-modal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: $blue;
+    color: $text-primary;
+  }
+
+  .popup-button {
+    @include button-reset;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    min-width: 43px;
+    height: 39px;
+    background-color: $green-600;
+    color: $text-primary;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .popup-text {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0;
+  }
+}

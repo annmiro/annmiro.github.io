@@ -1,0 +1,11 @@
+.footer {
+  background-color: $purple-200;
+  padding: 27px 220px 27px 204px;
+
+  .footer-content {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

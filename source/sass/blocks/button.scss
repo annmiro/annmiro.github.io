@@ -1,0 +1,17 @@
+.button {
+  @include button-reset;
+  padding: 15px 25px;
+  height: 58px;
+  background-color: $red;
+  color: $text-primary;
+  border-radius: 25px;
+  font-size: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &:hover {
+    box-shadow: 2px 5px 10px 0px $green-600;
+  }
+}

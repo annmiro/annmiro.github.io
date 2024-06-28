@@ -1,0 +1,32 @@
+.nav-list {
+  @include list-reset;
+  display: flex;
+
+  &.horizontal {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  &.vertical {
+    flex-direction: column;
+    gap: 39px;
+  }
+
+  .nav-item-link {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &:hover::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background-color: $text-primary;
+    }
+  }
+}

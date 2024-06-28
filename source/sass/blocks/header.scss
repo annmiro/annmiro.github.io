@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $purple-400;
+  height: 148px;
+  padding: 55px 56px 48px 155px;
+
+  .menu-button {
+    @include button-reset;
+    width: 43px;
+    height: 24px;
+    .cross-icon {
+      display: none;
+    }
+    .burger-icon {
+      display: block;
+    }
+    &.show {
+      .cross-icon {
+        display: block;
+      }
+      .burger-icon {
+        display: none;
+      }
+    }
+  }
+}

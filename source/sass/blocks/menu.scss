@@ -1,0 +1,19 @@
+.menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 55px;
+  background-color: $blue;
+  left: 0;
+  top: 0;
+  width: 451px;
+  min-height: 500px;
+  padding: 33px 65px 57px;
+  justify-content: space-between;
+  border: 1px solid $green-300;
+
+  &.show {
+    display: flex;
+    z-index: 1;
+  }
+}
